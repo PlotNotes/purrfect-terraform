@@ -18,12 +18,10 @@ variable "registry_password" {
   sensitive   = true
 }
 
-variable "admin_email" {
   description = "Admin email address for Purrfect Match notifications"
   type        = string
 
   validation {
-    condition     = can(regex("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$", var.admin_email))
     error_message = "Must be a valid email address."
   }
 }

@@ -10,7 +10,6 @@ module "purrfect_match" {
 
   registry_username = var.license_id
   registry_password = var.license_id
-  admin_email       = "admin@example.com"
 
   # Optional: use external database
   embedded_database    = false
@@ -35,7 +34,6 @@ module "purrfect_match" {
 |------|-------------|------|---------|----------|
 | registry_username | Registry username (license ID) | string | - | yes |
 | registry_password | Registry password (license ID) | string | - | yes |
-| admin_email | Admin email address | string | - | yes |
 | namespace | Kubernetes namespace | string | `"purrfect"` | no |
 | chart_version | Helm chart version | string | `"1.0.8"` | no |
 | embedded_database | Deploy embedded PostgreSQL | bool | `true` | no |

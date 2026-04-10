@@ -94,7 +94,6 @@ resource "helm_release" "purrfect_match" {
         maxCatsPerPage = var.max_cats_per_page
       }
 
-      adminEmail = var.admin_email
     })
   ]
 
